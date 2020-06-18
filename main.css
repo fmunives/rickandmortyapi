@@ -1,0 +1,41 @@
+body {
+  text-align: center;
+}
+
+input,
+button {
+  padding: 0.5em;
+}
+
+.search {
+  cursor: pointer;
+}
+
+.load-more {
+  cursor: pointer;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2em;
+}
+
+.cards > .card {
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+.cards > .card:last-child {
+  margin-right: 0;
+}
+
+.card {
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+}

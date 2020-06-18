@@ -19,6 +19,13 @@ function createLink(srcLink) {
   return newLink;
 }
 
+function createButtonLoadMore() {
+  let button = document.createElement("button");
+  button.textContent = "cargar más";
+  button.className = "load-more";
+  return button;
+}
+
 async function createMorties() {
   let items = document.createElement("div");
   items.className = "cards";
@@ -32,12 +39,14 @@ async function createMorties() {
     link.append(createImage(src));
     items.append(link);
   }
+
   return items;
 }
 
 async function showItems() {
   let items = await createMorties();
   form.after(items);
+  items.after(createButtonLoadMore());
 }
 
 showItems();
