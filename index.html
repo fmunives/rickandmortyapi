@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      form {
+        text-align: center;
+      }
+
+      input {
+        padding: 0.5em;
+      }
+
+      .search {
+        cursor: pointer;
+      }
+      .cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 2em;
+      }
+
+      .cards > .card {
+        margin-right: 1em;
+        margin-bottom: 1em;
+      }
+
+      .cards > .card:last-child {
+        margin-right: 0;
+      }
+
+      .card {
+        width: 200px;
+        height: 200px;
+        cursor: pointer;
+      }
+
+      .card img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="form" action="">
+      <input type="text" placeholder="search something" />
+      <input class="search" type="submit" value="search" />
+    </form>
+  </body>
+  <script src="main.js"></script>
+</html>
